@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "eLife App",
+  "short_name": "eLife App",
+  "version": "io.cordova.hellocordova",
+  "description": "Aplicativo para usuários que desejam trabalhar de forma autônoma na área da beleza, seja como cabelereiro, manicure, pedicure ou qualquer outra área.",
+  "author": "Apache Cordova Team",
+  "icons": [],
+  "start_url": "index.html"
+}
