@@ -5,6 +5,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
     <title>eLife APP</title>
 
 </head>
@@ -16,16 +17,19 @@
                 <span class="title-e negrito">e</span><span class="title-life">life</span>
             </nav>      
         </nav>
-        <div class="conteudo col-12">
+        <div class="container">
             <h3 class="texto-conteudo negrito">Cadastro de usuario</h3>
             <p class="texto-conteudo"><span>Seja bem vindo ao eLife App, Falta pouco para que voce tenha o melhor profissional para atende-lo em sua residencia<br><br>
             Insira Abaixo seu numero de Telefone:</span></p>
-            <div class="col-10 center">
-                <label class="center texto-conteudo" for="form-telefone">Telefone</label><br><br>
-                <input class="input-cadastro center" type="text" name="form-telefone" placeholder="( ) XXXX-XXXX">
+            <div class="row">
+                <div class="col-12-sm center">
+                    <label class="center texto-conteudo" for="form-telefone">Telefone</label><br><br>
+                    <input class="input-cadastro center" type="text" name="form-telefone" placeholder="( ) XXXX-XXXX">
+                </div>
             </div>
         </div>
         <button class="btnfooter targetPage" dt-page="#tela-codigo-confirmacao"/>avançar</button> 
+
     </div>
 
     <!-- TELA INSERIR CODIGO DE CONFIRMAÇÃO -->
@@ -35,12 +39,14 @@
                 <span class="title-e negrito">e</span><span class="title-life">life</span>
             </nav>      
         </nav>
-        <div class="conteudo col-12">
+        <div class="container">
             <h3 class="texto-conteudo negrito">Confirmação de cadastro</h3>
             <p class="texto-conteudo"><span>Opa! Quase la, Foi enviado um codigo via SMS para o celular informado, por gentileza verifique o codigo e o insira abaixo.</span></p>
-            <div class="col-10 center">
-                <label class="center texto-conteudo" for="form-codigo">Codigo de confirmação</label><br><br>
-                <input class="input-cadastro center" type="text" name="form-codigo" placeholder="XXX">
+            <div class="row">
+                <div class="col-12-sm center">
+                    <label class="center texto-conteudo" for="form-codigo">Codigo de confirmação</label><br><br>
+                    <input class="input-cadastro center" type="text" name="form-codigo" placeholder="XXXX">
+                </div>
             </div>
         </div>
         <button type="button" name="verificar" class="btnfooter targetPage" dt-page="#tela-nome-dataNascimento"/>verificar</button> 
@@ -53,55 +59,92 @@
                 <span class="title-e negrito">e</span><span class="title-life">life</span>
             </nav>      
         </nav>
-        <div class="conteudo col-12">
-            <h3 class="texto-conteudo negrito">Cadastro de usuario</h3>
-            <p class="texto-conteudo"><span>Seja bem vindo ao eLife App, Falta pouco para que voce tenha o melhor profissional para atende-lo em sua residencia<br><br>
-            Insira Abaixo seu numero de Telefone:</span></p>
-            <div class="col-10 center">
-                <label class="center texto-conteudo" for="form-telefone">Telefone</label><br><br>
-                <input class="input-cadastro" type="text" name="form-telefone" placeholder="( ) XXXX-XXXX">
+        <div class="container">
+            <h3 class="texto-conteudo negrito">Identifique-se :)</h3>
+            <p class="texto-conteudo"><span>Preencha seus dados pessoais completamente.</span></p>
+            <div class="row">
+                <div class="col-12-sm center">
+                    <label class="center texto-conteudo" for="form-telefone">Nome e sobrenome</label><br>
+                    <input class="input-cadastro" type="text" name="form-telefone">
+                </div>
+                <br>
+                <br>
+                <div class="col-12-sm center">
+                    <label class="center texto-conteudo" for="form-telefone">Data de nascimento</label><br>
+                    <input class="input-cadastro" type="date" name="form-telefone">
+                </div>
             </div>
         </div>
-        <button type="button" name="avancar" class="btnfooter"/>avançar</button> 
-    </div>
-
-    <!-- TELA INSERIR ENDEREÇO -->
-    <div id="tela-endereco" class="page hidden">
-        <nav class="navbar">
-            <nav class="nav-content">
-                <span class="title-e negrito">e</span><span class="title-life">life</span>
-            </nav>      
-        </nav>
-        <div class="conteudo col-12">
-            <h3 class="texto-conteudo negrito">Cadastro de usuario</h3>
-            <p class="texto-conteudo"><span>Seja bem vindo ao eLife App, Falta pouco para que voce tenha o melhor profissional para atende-lo em sua residencia<br><br>
-            Insira Abaixo seu numero de Telefone:</span></p>
-            <div class="col-10 center">
-                <label class="center texto-conteudo" for="form-telefone">Telefone</label><br><br>
-                <input class="input-cadastro" type="text" name="form-telefone" placeholder="( ) XXXX-XXXX">
-            </div>
+            <button type="button" name="avancar" class="btnfooter targetPage" dt-page="#tela-endereco"/>avançar</button> 
         </div>
-        <button type="button" name="avancar" class="btnfooter"/>avançar</button> 
-    </div>
-    <!-- TELA LOAD -->
-    <div id="telaCarregamento" class="page hidden">
-        <p class="texto-conteudo img-load">Carregando...</p>
-        <img class="img-load" src="img/load.svg" alt="aguarde"/>
-    </div>
-    <!-- TELA HOME -->
 
-    <!-- TELA FAVORITOS -->
 
-    <!-- TELA PROCURANDO PROFISSIONAL -->
 
-    <!-- TELA PROFISSIONAL ENCONTRADO -->
+        <!-- TELA INSERIR ENDEREÇO -->
+        <div id="tela-endereco" class="page hidden">
+            <nav class="navbar">
+                <nav class="nav-content">
+                    <span class="title-e negrito">e</span><span class="title-life">life</span>
+                </nav>      
+            </nav>
+            <div class="container">
+                <h3 class="texto-conteudo negrito">Onde voce mora?</h3>
+                <p class="texto-conteudo"><span>Abaixo voce pode inserir o local que deseja ser atendido.</span></p>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-12-sm">
+                        <label class="center texto-conteudo" for="form-telefone">CEP</label>
+                        <input class="input-cadastro" type="text" name="form-cep"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Rua</label>
+                        <input class="input-cadastro" type="text" name="form-rua"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Bairro</label>
+                        <input class="input-cadastro" type="text" name="form-rua"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Numero</label>
+                        <input class="input-cadastro" type="text" name="form-numero"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Complemento</label>
+                        <input class="input-cadastro" type="text" name="form-rua"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Estado</label>
+                        <input class="input-cadastro" type="text" name="form-estado"/>
+                    </div>
+                    <div class="col-6-sm">
+                        <label class="center texto-conteudo" for="form-telefone">Cidade</label>
+                        <input class="input-cadastro" type="text" name="form-rua"/>
+                    </div>
+                </div>
+                </div>         
+            </div>
+            <button type="button" name="avancar" class="btnfooter targetPage" dt-page="#telaCarregamento"/>avançar</button>
+        </div>
+        <!-- TELA LOAD -->
+        <div id="telaCarregamento" class="page hidden">
+            <p class="texto-conteudo img-load">Carregando...</p>
+            <img class="img-load" src="img/load.svg" alt="aguarde"/>
+        </div>
+        <!-- TELA HOME -->
 
-    <!-- TELA PROFISSIONAL SOLICITADO -->
- <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
- <script type="text/javascript" src="js/function.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-   
-</body>
+        <!-- TELA FAVORITOS -->
+
+        <!-- TELA PROCURANDO PROFISSIONAL -->
+
+        <!-- TELA PROFISSIONAL ENCONTRADO -->
+
+        <!-- TELA PROFISSIONAL SOLICITADO -->
+
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
 </body>
 </html>
